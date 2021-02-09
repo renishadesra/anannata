@@ -1,0 +1,128 @@
+body {
+    overflow-x: hidden;
+    background-color: black;
+    margin-top: 20px;
+}
+
+#banner-top {
+    padding-bottom: 5%;
+}
+
+.pipe {
+    padding-bottom: 1%;
+    margin-top: 1%;
+}
+
+#logo {
+    position: absolute;
+    height: 80px;
+}
+
+#main-menu {
+    margin-top: 1.5%;
+}
+
+.nav-item,
+.menuitem-links,
+.nav-link {
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.menuitem-links:after {
+    background: white repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffbf00;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menuitem-links:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+#container {
+    /* border: 1px solid tomato; */
+    perspective: 105px;
+    /* margin-left: 5%; */
+    margin-top: 2%;
+}
+
+#inner {
+    /* background-color: #ffbf00; */
+    width: 17em;
+    height: auto;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#banner-left-space {
+    /* border: 1px solid yellow; */
+    padding: 5% 5% 5% 5%;
+}
+
+#bg-form-color {
+    background-color: #ffbf50;
+    margin-top: 2%;
+}
+
+.border-golden {
+    border: 1px solid #ffbf00;
+}
+
+.bg-golden,
+.btn-golden {
+    background-color: #ffbf00;
+    font-weight: bold;
+}
+
+.text-golden {
+    color: #ffbf00;
+}
+
+#sub-form {
+    background-color: #ffbf00;
+    border: 1px solid #ffbf10;
+}
+
+#contact-form-sub-title {
+    font-weight: bold;
+}
+
+#bg-color-topform {
+    background-color: #ffbf00;
+    font-weight: bold;
+}
+
+#contact-title {
+    color: #ffbf00;
+    font-size: 1.75em;
+    margin-top: 5%;
+}
+
+#banner-desc {
+    color: whitesmoke;
+    font-size: 1em;
+}
