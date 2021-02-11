@@ -1,0 +1,15 @@
+banner left - 
+
+ <div class="col-md-6 center-vertically" id="left-col-banner">
+            <div id="desc-1">
+                <h1 href="#contact-us" id="contact-title"> Ideation to Execution </h1>
+                <p class="para-banner-1" id="banner-desc">Researching and brainstorming to identify and solve business challenges required to implement the solutions to achieve your strategic business goals.</p>
+            </div>
+            <hr>
+            <hr>
+            <div id="desc-2">
+                <h1 href=" #contact-us " id="contact-title "> Implementation To Commercialization </h1>
+                <p class="para-banner-2 " id="banner-desc ">At Anannta, building an IT solution is always through a customized approach because every business has unique infrastructure and business needs.</p>
+            </div>
+
+ 	

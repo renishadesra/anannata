@@ -4,13 +4,79 @@ body {
     margin-top: 20px;
 }
 
+
+/* particle system css  startrs here */
+
+#pjs {
+    position: absolute;
+    z-index: -99;
+}
+
+body {
+    margin-top: 20px;
+}
+
+
+/* =Jumbotron Main
+-------------------------------------------------------------- */
+
+.jumbotron.jumbotron-main {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: absolute;
+    margin: 0;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background: black;
+}
+
+.center-vertically {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.center-vertically-holder {
+    display: table;
+    height: 100%;
+}
+
+.scroll-indicator {
+    padding-top: 6px;
+    display: inline-block;
+    width: 50px;
+}
+
+.arrow-scroll-indicator {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.parallax-window {
+    background: transparent;
+}
+
+
+/* particle system css ends here */
+
 #banner-top {
     padding-bottom: 5%;
 }
 
 .pipe {
     padding-bottom: 1%;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 #logo {
@@ -22,11 +88,15 @@ body {
     margin-top: 1.5%;
 }
 
+#toggle-mainmenu-button {
+    margin-left: 70%;
+}
+
 .nav-item,
 .menuitem-links,
 .nav-link {
     color: white;
-    font-size: .9em;
+    font-size: .8em;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -65,7 +135,8 @@ body {
 }
 
 #inner {
-    width: 17em;
+    width: 20em;
+    font-size: small;
     height: auto;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
@@ -74,8 +145,29 @@ body {
     -o-transition: transform 0.5s;
 }
 
+#sub-form-title {
+    font-size: 1em;
+}
+
+#full-name,
+#email-id,
+#phone-number,
+#your-message {
+    font-size: 1em;
+}
+
 #banner-left-space {
-    padding: 5% 5% 5% 5%;
+    padding: 2% 2% 2% 2%;
+}
+
+#social-media-icons {
+    padding-right: 2%;
+    color: whitesmoke;
+    height: 24px;
+}
+
+#upwork-icon {
+    height: 16px;
 }
 
 #bg-form-color {
@@ -113,11 +205,175 @@ body {
 
 #contact-title {
     color: #ffbf00;
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin-top: 5%;
 }
 
 #banner-desc {
     color: whitesmoke;
-    font-size: 1em;
+    font-size: .8em;
+}
+
+
+/* services section starts here  */
+
+#services {
+    margin-top: 2%;
+}
+
+#service-title {
+    margin-top: 3%;
+}
+
+#color-highlight {
+    color: #ffbf00;
+}
+
+#offer-span {
+    color: whitesmoke;
+}
+
+#services-offered {
+    justify-content: center;
+}
+
+
+/* Included color classes.. 
+  .red 
+  .blue 
+  .yellow 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1104 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1104 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+figure.snip1104 img {
+    max-width: 100%;
+    position: relative;
+    opacity: 0.4;
+}
+
+figure.snip1104 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+figure.snip1104 h2 {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    display: inline-block;
+    background: #000000;
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    margin: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+figure.snip1104 h2 span {
+    font-weight: 800;
+}
+
+figure.snip1104:before {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(110deg) translateY(-50%);
+    transform: rotate(110deg) translateY(-50%);
+}
+
+figure.snip1104 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.snip1104.blue {
+    background: #ffbf00;
+}
+
+figure.snip1104.blue h2 {
+    background: #0a212f;
+}
+
+figure.snip1104.red {
+    background: #ffbf00;
+}
+
+figure.snip1104.red h2 {
+    background: #ffbf00;
+}
+
+figure.snip1104.yellow {
+    background: #7f5006;
+}
+
+figure.snip1104.yellow h2 {
+    background: #ffbf00;
+}
+
+figure.snip1104:hover img,
+figure.snip1104.hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+figure.snip1104:hover h2,
+figure.snip1104.hover h2 {
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+figure.snip1104:hover:before,
+figure.snip1104.hover:before {
+    -webkit-transform: rotate(110deg) translateY(-150%);
+    transform: rotate(110deg) translateY(-150%);
+}
+
+#white-fig-caption {
+    color: black;
+}
+
+.caption-size h2 {
+    font-size: 1.1em;
+}
+
+#dev-tag-2 {
+    font-size: 1.5em;
 }
