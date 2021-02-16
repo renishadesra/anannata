@@ -48,14 +48,14 @@
                     <img src="img/anannat.png" id="logo" alt="">
                 </div>
                 <!-- main menu links  -->
-                <div class="col-md-8 col-6" id="div-menu">
-                    <div class="" id="main-menu">
+                <div class="col-md-6 col-6" id="div-menu">
+                    <div class="d-flex container-fluid" id="main-menu">
                         <nav class="navbar navbar-expand-lg navbar-dark main-menubar-top ">
                             <!-- class to make main menu sticky = fixed-top -->
                             <button class="navbar-toggler float-right" id="toggle-mainmenu-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
-                            <div class="collapse navbar-collapse justify-content-center nav-links-here" id="navbarNavAltMarkup">
+                            <div class="collapse navbar-collapse nav-links-here" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
                                     <a class="nav-item menuitem-links nav-link active" href="#"> Home <span class="sr-only">(current)</span></a>
                                     <a class="nav-item menuitem-links nav-link" href="#"> Company </a>
@@ -63,6 +63,9 @@
                                     <a class="nav-item menuitem-links nav-link" href="#"> Hire Resources </a>
                                     <a class="nav-item menuitem-links nav-link" href="#"> Portfolio </a>
                                     <a class="nav-item menuitem-links nav-link" href="#"> Contact Us </a>
+                                    <div class="quote-btn-wrapper text-center">
+                                        <input type="button" id="quote-btn" value="GET QUOTE" class="btn btn-golden btn-block rounded-5 py-2" />
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -89,11 +92,21 @@
                         <p class="para-banner-2 " class="stagger2" id="banner-desc">At Anannta, building an IT solution is always through a customized approach because every business has unique infrastructure and business needs.</p>
                     </div>
                     <!-- social media bar starts here  -->
-                    <nav class="container" id="social-media-links">
-                        <a class="fb" id="social-media-icons" href="#"><i class="fa fa-facebook"></i></a>
-                        <a class="tw" id="social-media-icons" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="ig" id="social-media-icons" href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><img src="img/upwork_icon.png" alt="" id="upwork-icon"></a>
+                    <nav class="row container" id="social-media-links">
+                        <div class="social-icons-all" id="fb-icon">
+                            <a class="fb" id="social-media-icons" href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <div class="social-icons-all" id="twitter-icon">
+                            <a class="tw" id="social-media-icons" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="social-icons-all" id="instagram-icon">
+                            <a class="ig" id="social-media-icons" href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icons-all" id="upwrok-icon">
+                            <a href="#"><img id="upwork-img" src="img/upwork_icon.png" alt=""></a>
+                            <a id="hover-upwork-icon" href="#"><img src="img/upwork_icon_orange.png" alt="" id="upwork-icon-orange"></a>
+                        </div>
+
                     </nav>
                     <!-- social media bar ends here  -->
                 </div>
@@ -185,7 +198,7 @@
                     <a href="#"></a>
                 </figure>
             </div>
-            <div class="col-8 col-lg-3 col-sm-6">
+            <div class="col-8 col-lg-3 col-sm-6" id="appdev-tile">
                 <figure class="snip1104"><img src="img/mobile-dev.png" alt="sample35" />
                     <figcaption class="caption-size">
                         <h2>Mobile App <span id="dev-tag"> DEVELOPMENT</span></h2>
@@ -193,7 +206,7 @@
                     <a href="#"></a>
                 </figure>
             </div>
-            <div class="col-8 col-lg-3 col-sm-6">
+            <div class="col-8 col-lg-3 col-sm-6" id="custdev-tile">
                 <figure class="snip1104 red">
                     <img src="img/custom-app-dev.png" alt="sample33" />
                     <figcaption class="caption-size" id="white-fig-caption">
@@ -202,7 +215,7 @@
                     <a href="#"></a>
                 </figure>
             </div>
-            <div class="col-8 col-lg-3 col-sm-6">
+            <div class="col-8 col-lg-3 col-sm-6" id="uiux-tile">
                 <figure class="snip1104"><img src="img/UI-UX.png" alt="sample35" />
                     <figcaption class="caption-size">
                         <h2>UI UX &<span> Graphics Design</span></h2>
@@ -211,8 +224,20 @@
                 </figure>
             </div>
         </div>
+        <div class="row justify-content-center buttons" id="button-estimate">
+
+            <div class="round justify-content-center">
+                <a class="button" href="#"> Get A Free Estimate </a>
+            </div>
+
+        </div>
     </section>
 
+
+    <section id="life-hack-idea">
+
+
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
@@ -268,9 +293,62 @@
             .to("#loglow ", {
                 duration: 2,
                 opacity: 0,
-                ease: "power0 "
+                ease: "power0"
             })
     </script>
+
+    <!-- services we offer starts here -->
+    <script>
+        gsap.from("#webdev-tile", {
+            scrollTrigger: {
+                trigger: '#services',
+                start: "bottom bottom"
+            },
+            duration: 1,
+            y: -1500,
+            ease: 'power4',
+        })
+    </script>
+
+    <script>
+        gsap.from("#appdev-tile", {
+            scrollTrigger: {
+                trigger: '#services',
+                start: "bottom bottom",
+
+            },
+            duration: 1,
+            x: -3000,
+            ease: 'power4',
+
+        })
+    </script>
+
+    <script>
+        gsap.from("#custdev-tile", {
+            scrollTrigger: {
+                trigger: '#services',
+                start: "bottom bottom"
+            },
+            duration: 1,
+            y: 1500,
+            ease: 'power4',
+        })
+    </script>
+
+    <script>
+        gsap.from("#uiux-tile", {
+            scrollTrigger: {
+                trigger: '#services ',
+                start: "bottom bottom"
+            },
+            duration: 1,
+            x: 3000,
+            ease: 'power4',
+        })
+    </script>
+
+    <!-- services we offer ends here -->
 
 </body>
 

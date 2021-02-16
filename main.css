@@ -90,10 +90,13 @@ body {
 
 #main-menu {
     margin-top: 1.5%;
+    /* border: 1px solid yellow; */
+    width: 200%;
+    margin-left: -30%;
 }
 
 #toggle-mainmenu-button {
-    margin-left: 70%;
+    margin-left: 170%;
 }
 
 .nav-item,
@@ -170,7 +173,7 @@ body {
     height: 24px;
 }
 
-#upwork-icon {
+#upwork-img {
     height: 16px;
 }
 
@@ -382,4 +385,97 @@ figure.snip1104.hover:before {
 
 #dev-tag-2 {
     font-size: 1.5em;
+}
+
+
+/* THE ROUND PSEUDO-ELEMENT HOVER STYLES */
+
+a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica;
+}
+
+.round {
+    max-width: 960px;
+    margin: 2% auto;
+    text-align: center;
+}
+
+.round a {
+    color: #ffbf00;
+    margin-left: 5%;
+}
+
+.round .button {
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ffbf00;
+    transition: color .5s;
+}
+
+.round .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #ffbf00;
+    height: 150px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.round .button:hover {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.round .button:nth-child(1):before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(1):hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+
+/* social media icons tryout */
+
+.round .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #ffbf00;
+    height: 150px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#social-media-icons:hover {
+    color: #ffbf00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#upwork-icon-orange {
+    height: 16px;
+    margin-left: -54.5%;
+    display: none;
+}
+
+#upwrok-icon:hover #upwork-icon-orange {
+    display: inline-block;
+}
+
+.social-icons-all {
+    margin-left: 5%;
 }
